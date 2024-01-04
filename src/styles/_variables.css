@@ -1,0 +1,44 @@
+:root {
+  /* --background-color-body: #2e3842;
+
+  --button-background: transparent;
+  --button-active-background: #d4d4d4;
+  --button-hover-color: #40a79c;
+
+  --contact-section-background: #1d242a;
+
+  --projects-header-container-background: #1d242a;
+  --project-left-background: #ededed;
+  --project-right-background: #2a3540;
+
+  --footer-background: #1d242a;
+
+  --banner-background: #101010;
+  --banner-text-color: #fff; */
+
+  --text-xs: 12px;
+  --line-xs: 14px;
+
+  --text-s: 14px !important;
+  --line-s: 17px !important;
+
+  --text-m: 16px !important;
+  --line-m: 19px !important;
+
+  --text-l: 18px !important;
+  --line-l: 22px !important;
+
+  --text-xl: 20px !important;
+  --line-xl: 24px !important;
+
+  --text-xxl: 22px;
+  --line-xxl: 26px;
+
+  --text-xxxl: 24px;
+  --line-xxxl: 28px;
+
+  --text-normal: 400;
+  --text-medium: 500;
+  --text-semibold: 600;
+  --text-bold: 700;
+}
