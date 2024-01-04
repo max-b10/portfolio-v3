@@ -1,75 +1,23 @@
-.storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  border: 0;
-  border-radius: 3em;
+.primaryButton {
+  border: solid 1px;
+  border-radius: 0;
   cursor: pointer;
   display: inline-block;
-  line-height: 1;
-}
-.storybook-button--primary {
-  color: white;
-  background-color: #1ea7fd;
-}
-.storybook-button--secondary {
-  color: #333;
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  padding: 0.1rem 0.5rem;
+  margin: 0.5rem 0.2rem;
+  line-height: 2rem;
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
-}
-.storybook-button--small {
-  font-size: 12px;
-  padding: 10px 16px;
-}
-.storybook-button--medium {
-  font-size: var(--text-s);
-  line-height: var(--line-s);
-  padding: 11px 20px;
-}
-.storybook-button--large {
-  font-size: var(--text-m);
-  line-height: var(--line-m);
-  padding: 12px 24px;
-}
-
-.secondaryButton {
-  background-color: var(--background);
-  border-color: var(--neutral-300);
-  color: var(--neutral-800);
-
-  :global .p-button-label {
-    color: var(--neutral-800);
-  }
+  font-weight: 900;
 
   &:enabled:hover {
-    background-color: var(--neutral-100);
-    border-color: var(--neutral-300);
+    color: rgb(64, 167, 156);
   }
 
-  &:enabled:focus {
-    background-color: var(--neutral-100);
-    border-color: var(--neutral-300);
-  }
-
-  &:disabled {
-    background-color: var(--neutral-100);
-    border-color: var(--neutral-300);
-    color: var(--neutral-400);
-  }
-}
-
-.primaryButton {
-  background-color: var(--primary-button);
-  border-color: var(--primary-button);
-  color: var(--background);
-
-  &:enabled:hover {
-    background-color: var(--primary-600);
-    border-color: var(--primary-600);
-  }
-
-  &:enabled:focus {
-    background-color: var(--primary-700);
-    border-color: var(--primary-700);
+  &:enabled:active {
+    transform: translateY(1px);
+    background-color: #d4d4d4;
   }
 
   &:disabled {
@@ -78,3 +26,29 @@
     color: var(--neutral-500);
   }
 }
+
+// .secondaryButton {
+//   background-color: var(--background);
+//   border-color: var(--neutral-300);
+//   color: var(--neutral-800);
+
+//   :global .p-button-label {
+//     color: var(--neutral-800);
+//   }
+
+//   &:enabled:hover {
+//     background-color: var(--neutral-100);
+//     border-color: var(--neutral-300);
+//   }
+
+//   &:enabled:focus {
+//     background-color: var(--neutral-100);
+//     border-color: var(--neutral-300);
+//   }
+
+//   &:disabled {
+//     background-color: var(--neutral-100);
+//     border-color: var(--neutral-300);
+//     color: var(--neutral-400);
+//   }
+// }

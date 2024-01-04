@@ -1,16 +1,16 @@
-import { render } from '@testing-library/react';
-import { composeStories } from '@storybook/testing-react';
+import { render } from "@testing-library/react";
+import { composeStories } from "@storybook/testing-react";
 
-import * as stories from './Button.stories';
-import { userEvent } from '@storybook/testing-library';
+import * as stories from "./Button.stories";
+import { userEvent } from "@storybook/testing-library";
 
 const { Primary } = composeStories(stories);
 
-it('Checks if the button click function is called', () => {
+it("Checks if the button click function is called", () => {
   const clickFn = jest.fn();
   const { getByText } = render(<Primary {...Primary.args} onClick={clickFn} />);
 
-  userEvent.click(getByText('Primary Button'));
+  userEvent.click(getByText("Primary Button"));
   expect(clickFn).toHaveBeenCalled();
 });
 
