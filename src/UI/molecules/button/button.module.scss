@@ -26,29 +26,3 @@
     color: var(--neutral-500);
   }
 }
-
-// .secondaryButton {
-//   background-color: var(--background);
-//   border-color: var(--neutral-300);
-//   color: var(--neutral-800);
-
-//   :global .p-button-label {
-//     color: var(--neutral-800);
-//   }
-
-//   &:enabled:hover {
-//     background-color: var(--neutral-100);
-//     border-color: var(--neutral-300);
-//   }
-
-//   &:enabled:focus {
-//     background-color: var(--neutral-100);
-//     border-color: var(--neutral-300);
-//   }
-
-//   &:disabled {
-//     background-color: var(--neutral-100);
-//     border-color: var(--neutral-300);
-//     color: var(--neutral-400);
-//   }
-// }
