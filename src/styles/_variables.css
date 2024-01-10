@@ -1,5 +1,5 @@
 :root {
-  /* --background-color-body: #2e3842;
+  --background-color-body: #2e3842;
 
   --button-background: transparent;
   --button-active-background: #d4d4d4;
@@ -14,8 +14,9 @@
   --footer-background: #1d242a;
 
   --banner-background: #101010;
-  --banner-text-color: #fff; */
+  --banner-text-color: #fff;
 
+  /* text size and weight */
   --text-xs: 12px;
   --line-xs: 14px;
 

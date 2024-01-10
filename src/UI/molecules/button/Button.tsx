@@ -2,6 +2,10 @@ import React from "react";
 import styles from "./button.module.scss";
 import type { ButtonProps } from "./Button.types";
 import { Button as ButtonComp } from "primereact/button";
+import {
+  ElementName,
+  setTestSelector,
+} from "../../../lib/testSelector/testSelector";
 
 export const Button = ({
   label,
@@ -17,6 +21,7 @@ export const Button = ({
         className={`${styles.primaryButton} ${classNameWrapper}`}
         iconPos={iconPos}
         {...props}
+        {...setTestSelector(ElementName.BUTTON, label)}
       />
     );
   }
@@ -27,6 +32,7 @@ export const Button = ({
       className={`${styles.secondaryButton} ${classNameWrapper}`}
       iconPos={iconPos}
       {...props}
+      {...setTestSelector(ElementName.BUTTON, label)}
     />
   );
 };
