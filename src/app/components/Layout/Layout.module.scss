@@ -1,0 +1,10 @@
+.mainWrapper {
+  width: 100%;
+  @media screen and (min-width: 1368px) {
+    width: 964px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1438px) {
+    width: 1176px;
+  }
+}
