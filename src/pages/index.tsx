@@ -4,8 +4,10 @@ import { Button } from "../UI/molecules/button/Button";
 const Home = (): JSX.Element => {
   return (
     <div>
-      <span>My new portfolio</span>
-      <Button label={"hi"} />
+      <div className={`flex`}>
+        <Button primary label={"Play Game"} />
+        <Button primary label={"View Code"} />
+      </div>
     </div>
   );
 };
