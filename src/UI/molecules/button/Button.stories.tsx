@@ -1,4 +1,3 @@
-import React from "react";
 import type { StoryObj, Meta } from "@storybook/react";
 
 import { Button } from "./Button";
@@ -14,7 +13,7 @@ type Story = StoryObj<typeof Button>;
 export const Primary: Story = {
   args: {
     primary: true,
-    label: " Primary Button",
+    label: "Primary Button",
   },
 };
 export const Secondary: Story = {
