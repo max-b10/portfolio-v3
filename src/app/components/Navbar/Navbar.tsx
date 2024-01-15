@@ -4,13 +4,15 @@ import { navLinks } from "../../../menu";
 
 const Navbar: FC = () => {
   return (
-    <div className={styles.nav}>
-      <ul className="flex">
+    <nav className={`p-0 m-0 ${styles.nav}`}>
+      <ul className="flex justify-content-center m-0 p-4">
         {navLinks.map((navLink) => (
-          <li key={`${navLink.title}`}>{navLink.title}</li>
+          <li className={`mx-3 ${styles.listOptions}`} key={`${navLink.title}`}>
+            {navLink.title}
+          </li>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 };
 export default Navbar;

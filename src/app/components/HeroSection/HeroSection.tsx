@@ -1,4 +1,6 @@
 import React, { ReactNode } from "react";
+import Image from "next/image";
+import styles from "./HeroSection.module.scss";
 
 interface HeroSectionProps {
   title?: ReactNode;
@@ -8,8 +10,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   title = "HeroSection test",
 }) => {
   return (
-    <div className="flex justify-content-center align-items-center h-screen">
-      {title}
+    <div className={`relative h-screen ${styles.heroSection}`}>
+      <Image
+        src="/images/firebackground.jpg"
+        alt="background image"
+        layout="fill"
+        objectFit="cover"
+      />
+      <div
+        className={`absolute inset-0 flex justify-center items-center ${styles.overlay}`}
+      >
+        {title}
+      </div>
     </div>
   );
 };

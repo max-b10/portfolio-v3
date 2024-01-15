@@ -12,6 +12,30 @@ const Home = (): JSX.Element => {
         <Button primary label={"Play Game"} />
         <Button primary label={"View Code"} />
       </div>
+      <div className={`flex justify-content-center`}>
+        <Button primary label={"Play Game"} />
+        <Button primary label={"View Code"} />
+      </div>
+      <div className={`flex justify-content-center`}>
+        <Button primary label={"Play Game"} />
+        <Button primary label={"View Code"} />
+      </div>
+      <div className={`flex justify-content-center`}>
+        <Button primary label={"Play Game"} />
+        <Button primary label={"View Code"} />
+      </div>
+      <div className={`flex justify-content-center`}>
+        <Button primary label={"Play Game"} />
+        <Button primary label={"View Code"} />
+      </div>
+      <div className={`flex justify-content-center`}>
+        <Button primary label={"Play Game"} />
+        <Button primary label={"View Code"} />
+      </div>
+      <div className={`flex justify-content-center`}>
+        <Button primary label={"Play Game"} />
+        <Button primary label={"View Code"} />
+      </div>
     </>
   );
 };

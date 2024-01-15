@@ -1,6 +1,6 @@
 :root {
   /* Colours */
-
+  --neutral-0: #fff;
   --neutral-50: #fafafa;
   --neutral-100: #f5f5f5;
   --neutral-200: #e5e5e5;
@@ -27,7 +27,6 @@
   --footer-background: #1d242a;
 
   --banner-background: #101010;
-  --banner-text-color: #fff;
 
   --font-family: Raleway, sans-serif;
   /* text size and weight */
