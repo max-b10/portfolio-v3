@@ -1,32 +1,32 @@
 export const navLinks = [
   {
-    //   url: 'https://github.com/max-b10',
-    title: "github",
+    url: "https://github.com/max-b10",
+    // title: "github",
     index: 0,
-    //   iconName: 'github.svg',
+    iconName: "GitHubIcon",
   },
   {
-    //   url: 'https://github.com/max-b10',
+    url: "",
     title: "linkedin",
     index: 1,
-    //   iconName: 'github.svg',
+    iconName: "LinkedInIcon",
   },
   {
-    //   url: 'https://github.com/max-b10',
+    url: "",
     title: "email",
     index: 2,
-    //   iconName: 'github.svg',
+    iconName: "EmailIcon",
   },
   {
-    //   url: 'https://github.com/max-b10',
+    url: "",
     title: "phone",
     index: 3,
-    //   iconName: 'github.svg',
+    iconName: "LocalPhoneIcon",
   },
   {
-    //   url: 'https://github.com/max-b10',
+    url: "",
     title: "CV",
     index: 4,
-    //   iconName: 'github.svg',
+    iconName: "PictureAsPdfIcon",
   },
 ];
