@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0 24px;
+  border-top: solid 1px black;
 }
 .light {
   background-color: var(--neutral-0);
@@ -11,4 +13,30 @@
 .dark {
   background-color: var(--project-dark);
   color: white;
+}
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 70%;
+}
+.projectHeader {
+  text-decoration: underline;
+}
+.imageContainer {
+  text-align: center;
+}
+.image {
+  padding: 1px;
+  border: solid 1px #8a8a8a;
+}
+.projectDescription {
+  margin: 0 auto;
+  padding: 6px;
+  text-align: justify;
+  font-size: var(--text-l);
+  line-height: var(--line-xxl);
+  max-width: 80%;
 }
