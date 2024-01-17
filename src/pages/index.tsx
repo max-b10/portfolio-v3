@@ -1,9 +1,9 @@
 import React from "react";
-import { Button } from "../UI/molecules/button/Button";
 import HeroSection from "../app/components/HeroSection/HeroSection";
 // import Navbar from "../app/components/Navbar/Navbar";
 import Banner from "../app/components/Banner/Banner";
-import styles from "./index.module.css";
+import ProjectDisplay from "../app/components/ProjectDisplay/ProjectDisplay";
+import { projects } from "../menu/projectsData";
 const Home = (): JSX.Element => {
   return (
     <>
@@ -12,10 +12,15 @@ const Home = (): JSX.Element => {
 
       <HeroSection />
       <Banner showTopBorder />
-      <div className={`flex justify-content-center ${styles.test}`}>
-        <Button primary label={"Play Game"} />
-        <Button primary label={"View Code"} />
-      </div>
+      {projects.map((project) => (
+        <ProjectDisplay
+          key={project.index}
+          title={project.title}
+          imageSrc={project.imageSrc}
+          description={project.description}
+        />
+      ))}
+
       <Banner showTopBorder />
     </>
   );

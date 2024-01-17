@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import styles from "./NavBar.module.scss";
-import { navLinks } from "../../../menu";
+import { navLinks } from "../../../menu/navLinks";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
