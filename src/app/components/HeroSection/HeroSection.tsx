@@ -10,7 +10,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   title = "HeroSection test",
 }) => {
   return (
-    <div className={`relative h-screen ${styles.heroSection}`}>
+    <div className={`relative ${styles.heroSection}`}>
       <Image
         src="/images/firebackground.jpg"
         alt="background image"
