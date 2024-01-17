@@ -28,6 +28,7 @@ export const Icon: React.FC<IconProps> = ({
       {tooltip && <>{tooltip}</>}
 
       <Image
+        color="white"
         src={iconPath}
         alt={title}
         width={width}
