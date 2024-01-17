@@ -4,7 +4,6 @@
   align-items: center;
   padding: 20px 0px;
   color: var(--neutral-0);
-  border-top: solid 1px var(--neutral-0);
 }
 .banner::before,
 .banner:after {
@@ -22,4 +21,11 @@
 .banner:after {
   right: 0;
   margin-left: 10px;
+}
+.topBorder {
+  border-top: solid 1px var(--neutral-0);
+}
+
+.bottomBorder {
+  border-bottom: solid 1px var(--neutral-0);
 }
