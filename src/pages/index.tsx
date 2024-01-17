@@ -11,7 +11,7 @@ const Home = (): JSX.Element => {
       <Banner showBottomBorder />
 
       <HeroSection />
-      <Banner showTopBorder showBottomBorder />
+      <Banner showTopBorder />
       <div className={`flex justify-content-center ${styles.test}`}>
         <Button primary label={"Play Game"} />
         <Button primary label={"View Code"} />

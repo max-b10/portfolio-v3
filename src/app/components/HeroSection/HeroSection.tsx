@@ -15,6 +15,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         src="/images/firebackground.jpg"
         alt="background image"
         layout="fill"
+        style={{
+          opacity: "30%",
+        }}
         objectFit="cover"
       />
       <div
