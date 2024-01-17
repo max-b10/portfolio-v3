@@ -8,3 +8,15 @@
     width: 1176px;
   }
 }
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: #ffffff;
+}
+.heroSection {
+  height: 80vh;
+}

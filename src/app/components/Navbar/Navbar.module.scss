@@ -1,0 +1,15 @@
+.nav {
+  background-color: var(--nav-background);
+  color: var(--neutral-0);
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid var(--neutral-0);
+  z-index: 1;
+}
+.listOptions {
+  list-style: none;
+}
+// .icon {
+//   height: 40px;
+//   width: 40px;
+// }
