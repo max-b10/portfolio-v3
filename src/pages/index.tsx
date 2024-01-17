@@ -14,7 +14,8 @@ const Home = (): JSX.Element => {
       <Banner showTopBorder />
       {projects.map((project) => (
         <ProjectDisplay
-          key={project.index}
+          key={project.id}
+          index={project.index}
           title={project.title}
           imageSrc={project.imageSrc}
           description={project.description}

@@ -4,18 +4,26 @@ import Image from "next/image";
 import { Button } from "../../../UI/molecules/button/Button";
 
 interface ProjectDisplayProps {
+  index: number;
   title: string;
   imageSrc: string;
   description: string;
 }
 
 const ProjectDisplay: React.FC<ProjectDisplayProps> = ({
+  index,
   title,
   imageSrc,
   description,
 }) => {
+  const isEven = index % 2 === 0;
+
   return (
-    <div className={styles.projectContainerLight}>
+    <div
+      className={`${styles.projectContainer} ${
+        isEven ? styles.light : styles.dark
+      }`}
+    >
       <div>
         <h3>{title}</h3>
       </div>

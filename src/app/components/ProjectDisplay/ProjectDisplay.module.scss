@@ -1,17 +1,14 @@
-.projectContainerLight {
-  background-color: var(--neutral-0);
+.projectContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.projectContainerDark {
+.light {
+  background-color: var(--neutral-0);
+}
+.dark {
   background-color: var(--project-dark);
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
