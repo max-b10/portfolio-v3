@@ -1,6 +1,6 @@
 import "primeicons/primeicons.css";
 import "primereact/resources/primereact.min.css"; //core css
-import "primereact/resources/themes/lara-light-indigo/theme.css"; //theme
+
 import "primeflex/primeflex.css";
 
 import "../styles/_variables.css";

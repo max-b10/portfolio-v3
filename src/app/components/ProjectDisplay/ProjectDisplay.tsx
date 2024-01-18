@@ -16,7 +16,7 @@ const ProjectDisplay: React.FC<ProjectDisplayProps> = ({
   description,
 }) => {
   const isEven = index % 2 === 0;
-
+  const isPrimary = isEven;
   return (
     <div
       className={`${styles.projectContainer} ${
@@ -40,8 +40,16 @@ const ProjectDisplay: React.FC<ProjectDisplayProps> = ({
         </div>
 
         <div className={styles.buttonContainer}>
-          <Button classNameWrapper="mx-1" primary label={"Play Game"} />
-          <Button classNameWrapper="mx-1" primary label={"View Code"} />
+          <Button
+            classNameWrapper="mr-2"
+            primary={isPrimary}
+            label={"Play Game"}
+          />
+          <Button
+            classNameWrapper="ml-2"
+            primary={isPrimary}
+            label={"View Code"}
+          />
         </div>
       </div>
     </div>
