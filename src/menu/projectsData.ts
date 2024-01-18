@@ -1,9 +1,19 @@
+import FlappyBirdPic from "../../public/images/ProjectPreviews/flappy-bird.png";
+import TTSPic from "../../public/images/ProjectPreviews/tts.png";
+import SnakePic from "../../public/images/ProjectPreviews/snake.png";
+import DadJokePic from "../../public/images/ProjectPreviews/dad-joke.png";
+import CalculatorPic from "../../public/images/ProjectPreviews/calculator.png";
+import CTCMPic from "../../public/images/ProjectPreviews/ctcm.png";
+import TodoListPic from "../../public/images/ProjectPreviews/todo-list.png";
+import BreakoutPic from "../../public/images/ProjectPreviews/breakout.png";
+import HangmanPic from "../../public/images/ProjectPreviews/hangman.png";
+
 export const projects = [
   {
     id: 1,
     index: 0,
     title: "Flappy Bird",
-    imageSrc: "/images/ProjectPreviews/flappy-bird.png",
+    imageSrc: FlappyBirdPic,
     description:
       "A recreation of the infamously addictive mobile game: Flappy Bird using HTML, CSS, and vanilla JavaScript.",
   },
@@ -11,7 +21,7 @@ export const projects = [
     id: 2,
     index: 1,
     title: "Text to Speech",
-    imageSrc: "/images/ProjectPreviews/tts.png",
+    imageSrc: TTSPic,
     description:
       "Styled with Bootstrap, this app uses the Web Speech API to turn user's text into a voice of their choice from the dropdown menu provided.",
   },
@@ -19,7 +29,7 @@ export const projects = [
     id: 3,
     index: 2,
     title: "Snake",
-    imageSrc: "/images/ProjectPreviews/snake.png",
+    imageSrc: SnakePic,
     description:
       "A Nokia style Snake game using HTML, CSS and vanilla JavaScript, with arrow-keys included for mobile users.",
   },
@@ -27,7 +37,7 @@ export const projects = [
     id: 4,
     index: 3,
     title: "Dad Joke Generator",
-    imageSrc: "/images/ProjectPreviews/dad-joke.png",
+    imageSrc: DadJokePic,
     description:
       "Using Axios and one simple async function, this app provides any immature user with a dad joke at the click of a button. Credit to the icanhazdadjoke.com API.",
   },
@@ -35,7 +45,7 @@ export const projects = [
     id: 5,
     index: 4,
     title: "Calculator",
-    imageSrc: "/images/ProjectPreviews/calculator.png",
+    imageSrc: CalculatorPic,
     description:
       "A JavaScript Calculator served as a useful project to help me learn vanilla JavaScript fundamentals and CSS Grid.",
   },
@@ -43,7 +53,7 @@ export const projects = [
     id: 6,
     index: 5,
     title: "Compare the Crypto Market",
-    imageSrc: "/images/ProjectPreviews/ctcm.png",
+    imageSrc: CTCMPic,
     description:
       "Using Axios to access theCoin GeckoAPI, this app displays the realtime prices and information of cryptocurrencies. Another project I styled using Bootstrap.",
   },
@@ -51,7 +61,7 @@ export const projects = [
     id: 7,
     index: 6,
     title: "Todo-List App",
-    imageSrc: "/images/ProjectPreviews/todo-list.png",
+    imageSrc: TodoListPic,
     description:
       "The most clichéd of all JavaScript projects, I found this to be a brilliant learning resource from Andrew Mead's JavaScript course on Udemy.com",
   },
@@ -59,7 +69,7 @@ export const projects = [
     id: 8,
     index: 7,
     title: "Breakout",
-    imageSrc: "/images/ProjectPreviews/breakout.png",
+    imageSrc: BreakoutPic,
     description:
       "A recreation of the classic game: Breakout using HTML, CSS and vanilla JavaScript. Right and Left arrow-keys included formobile users.",
   },
@@ -67,7 +77,7 @@ export const projects = [
     id: 9,
     index: 8,
     title: "Hangman",
-    imageSrc: "/images/ProjectPreviews/todo-list.png",
+    imageSrc: HangmanPic,
     description:
       "A very useful learning project I completed during Andrew Mead's JavaScript course on Udemy.com. Not supported on touch screen devices...yet!",
   },

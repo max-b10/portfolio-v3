@@ -1,19 +1,18 @@
 import React from "react";
 import styles from "./ProjectDisplay.module.scss";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Button } from "../../../UI/molecules/button/Button";
-import FlappyBirdPic from "../../../../public/images/ProjectPreviews/flappy-bird.png";
 interface ProjectDisplayProps {
   index: number;
   title: string;
-  //   imageSrc: string;
+  imageSrc: StaticImageData;
   description: string;
 }
 
 const ProjectDisplay: React.FC<ProjectDisplayProps> = ({
   index,
   title,
-  //   imageSrc,
+  imageSrc,
   description,
 }) => {
   const isEven = index % 2 === 0;
@@ -25,25 +24,24 @@ const ProjectDisplay: React.FC<ProjectDisplayProps> = ({
       }`}
     >
       <div className={styles.contentContainer}>
-        <div className={`${styles.projectHeader}`}>
-          <h3>{title}</h3>
+        <div className={styles.projectHeader}>
+          <span>{title}</span>
         </div>
         <div className={styles.imageContainer}>
           <Image
-            src={FlappyBirdPic}
+            src={imageSrc}
             className={styles.image}
             alt="background image"
-            height={200}
-            width={200}
           />
         </div>
+
         <div className={`${styles.projectDescription}`}>
           <p>{description}</p>
         </div>
 
-        <div className={`flex justify-content-center ${styles.test}`}>
-          <Button primary label={"Play Game"} />
-          <Button primary label={"View Code"} />
+        <div className={styles.buttonContainer}>
+          <Button classNameWrapper="mx-1" primary label={"Play Game"} />
+          <Button classNameWrapper="mx-1" primary label={"View Code"} />
         </div>
       </div>
     </div>

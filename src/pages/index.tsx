@@ -17,7 +17,7 @@ const Home = (): JSX.Element => {
           key={project.id}
           index={project.index}
           title={project.title}
-          // imageSrc={project.imageSrc}
+          imageSrc={project.imageSrc}
           description={project.description}
         />
       ))}

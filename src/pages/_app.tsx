@@ -9,7 +9,11 @@ import "../styles/globals.scss";
 import type { AppProps } from "next/app";
 import { SWRConfig } from "swr";
 import Head from "next/head";
-
+import { Raleway } from "next/font/google";
+const raleway = Raleway({
+  subsets: ["latin"],
+  // weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -33,7 +37,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           revalidateOnMount: true,
         }}
       />
-      <Component {...pageProps} />
+      <main className={raleway.className}>
+        <Component className={raleway.className} {...pageProps} />
+      </main>
     </>
   );
 }
