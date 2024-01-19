@@ -27,11 +27,11 @@ const ProjectDisplay: React.FC<ProjectDisplayProps> = ({
   const isPrimary = isEven;
   const playGame = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
-    window.location.href = playUrl ?? "";
+    window.open(playUrl ?? "", "_blank");
   };
   const viewCode = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
-    window.location.href = codeUrl ?? "";
+    window.open(codeUrl ?? "", "_blank");
   };
 
   return (
