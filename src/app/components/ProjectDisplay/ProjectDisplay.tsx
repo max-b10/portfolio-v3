@@ -7,6 +7,10 @@ interface ProjectDisplayProps {
   title: string;
   imageSrc: StaticImageData;
   description: string;
+  playUrl?: string;
+  codeUrl?: string;
+  playText?: string;
+  viewText?: string;
 }
 
 const ProjectDisplay: React.FC<ProjectDisplayProps> = ({
@@ -14,9 +18,22 @@ const ProjectDisplay: React.FC<ProjectDisplayProps> = ({
   title,
   imageSrc,
   description,
+  playUrl,
+  codeUrl,
+  playText,
+  viewText,
 }) => {
   const isEven = index % 2 === 0;
   const isPrimary = isEven;
+  const playGame = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    window.location.href = playUrl ?? "";
+  };
+  const viewCode = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    window.location.href = codeUrl ?? "";
+  };
+
   return (
     <div
       className={`${styles.projectContainer} ${
@@ -43,12 +60,14 @@ const ProjectDisplay: React.FC<ProjectDisplayProps> = ({
           <Button
             classNameWrapper="mr-2"
             primary={isPrimary}
-            label={"Play Game"}
+            label={playText ?? "Play Game"}
+            onClick={playGame}
           />
           <Button
             classNameWrapper="ml-2"
             primary={isPrimary}
-            label={"View Code"}
+            label={viewText ?? "View Code"}
+            onClick={viewCode}
           />
         </div>
       </div>

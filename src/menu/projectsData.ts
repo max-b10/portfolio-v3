@@ -16,6 +16,10 @@ export const projects = [
     imageSrc: FlappyBirdPic,
     description:
       "A recreation of the infamously addictive mobile game: Flappy Bird using HTML, CSS, and vanilla JavaScript.",
+    playUrl: "https://flappy-bird-max-b10.netlify.app/",
+    codeUrl: "https://github.com/max-b10/flappy-bird",
+    playText: "Play Game",
+    viewText: "View Code",
   },
   {
     id: 2,
@@ -24,6 +28,10 @@ export const projects = [
     imageSrc: TTSPic,
     description:
       "Styled with Bootstrap, this app uses the Web Speech API to turn user's text into a voice of their choice from the dropdown menu provided.",
+    playUrl: "https://tts-max-b10.netlify.app/",
+    codeUrl: "https://github.com/max-b10/Text-To-Speech",
+    playText: "Play Game",
+    viewText: "View Code",
   },
   {
     id: 3,
@@ -32,6 +40,10 @@ export const projects = [
     imageSrc: SnakePic,
     description:
       "A Nokia style Snake game using HTML, CSS and vanilla JavaScript, with arrow-keys included for mobile users.",
+    playUrl: "https://snake-max-b10.netlify.app/",
+    codeUrl: "https://github.com/max-b10/snake",
+    playText: "Play Game",
+    viewText: "View Code",
   },
   {
     id: 4,
@@ -40,6 +52,10 @@ export const projects = [
     imageSrc: DadJokePic,
     description:
       "Using Axios and one simple async function, this app provides any immature user with a dad joke at the click of a button. Credit to the icanhazdadjoke.com API.",
+    playUrl: "https://djg-max-b10.netlify.app/",
+    codeUrl: "https://github.com/max-b10/Dad-joke-generator",
+    playText: "Play Game",
+    viewText: "View Code",
   },
   {
     id: 5,
@@ -48,6 +64,10 @@ export const projects = [
     imageSrc: CalculatorPic,
     description:
       "A JavaScript Calculator served as a useful project to help me learn vanilla JavaScript fundamentals and CSS Grid.",
+    playUrl: "https://calculator-max-b10.netlify.app/",
+    codeUrl: "https://github.com/max-b10/JS-Calculator",
+    playText: "Play Game",
+    viewText: "View Code",
   },
   {
     id: 6,
@@ -56,6 +76,10 @@ export const projects = [
     imageSrc: CTCMPic,
     description:
       "Using Axios to access theCoin GeckoAPI, this app displays the realtime prices and information of cryptocurrencies. Another project I styled using Bootstrap.",
+    playUrl: "https://ctcm-max-b10.netlify.app",
+    codeUrl: "https://github.com/max-b10/Crypto-Compare-App",
+    playText: "Play Game",
+    viewText: "View Code",
   },
   {
     id: 7,
@@ -64,6 +88,10 @@ export const projects = [
     imageSrc: TodoListPic,
     description:
       "The most clichéd of all JavaScript projects, I found this to be a brilliant learning resource from Andrew Mead's JavaScript course on Udemy.com",
+    playUrl: "https://max-b10-todolist.netlify.app/",
+    codeUrl: "https://github.com/max-b10/todo-app",
+    playText: "Play Game",
+    viewText: "View Code",
   },
   {
     id: 8,
@@ -71,7 +99,11 @@ export const projects = [
     title: "Breakout",
     imageSrc: BreakoutPic,
     description:
-      "A recreation of the classic game: Breakout using HTML, CSS and vanilla JavaScript. Right and Left arrow-keys included formobile users.",
+      "A recreation of the classic game: Breakout using HTML, CSS and vanilla JavaScript. Right and Left arrow-keys included for mobile users.",
+    playUrl: "https://brick-breaker-max-b10.netlify.app/",
+    codeUrl: "https://github.com/max-b10/Brick-Breaker",
+    playText: "Play Game",
+    viewText: "View Code",
   },
   {
     id: 9,
@@ -80,5 +112,9 @@ export const projects = [
     imageSrc: HangmanPic,
     description:
       "A very useful learning project I completed during Andrew Mead's JavaScript course on Udemy.com. Not supported on touch screen devices...yet!",
+    playUrl: "https://max-b10-hangman.netlify.app/",
+    codeUrl: "https://github.com/max-b10/hangman",
+    playText: "Play Game",
+    viewText: "View Code",
   },
 ];

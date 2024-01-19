@@ -19,6 +19,10 @@ const Home = (): JSX.Element => {
           title={project.title}
           imageSrc={project.imageSrc}
           description={project.description}
+          playUrl={project.playUrl}
+          codeUrl={project.codeUrl}
+          playText={project.playText}
+          viewText={project.viewText}
         />
       ))}
 
