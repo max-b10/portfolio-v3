@@ -22,14 +22,10 @@
 
   --projects-header-container-background: #1d242a;
   --project-left-background: #ededed;
-  --project-right-background: #2a3540;
+  --project-dark: #2a3540;
 
   --footer-background: #1d242a;
 
-  --banner-background: #101010;
-
-  --font-family: Raleway, sans-serif;
-  /* text size and weight */
   --text-xs: 12px;
   --line-xs: 14px;
 

@@ -1,41 +1,32 @@
 import React from "react";
-import { Button } from "../UI/molecules/button/Button";
 import HeroSection from "../app/components/HeroSection/HeroSection";
-import Navbar from "../app/components/Navbar/Navbar";
-
+// import Navbar from "../app/components/Navbar/Navbar";
+import Banner from "../app/components/Banner/Banner";
+import ProjectDisplay from "../app/components/ProjectDisplay/ProjectDisplay";
+import { projects } from "../menu/projectsData";
 const Home = (): JSX.Element => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Banner showBottomBorder />
+
       <HeroSection />
-      <div className={`flex justify-content-center`}>
-        <Button primary label={"Play Game"} />
-        <Button primary label={"View Code"} />
-      </div>
-      <div className={`flex justify-content-center`}>
-        <Button primary label={"Play Game"} />
-        <Button primary label={"View Code"} />
-      </div>
-      <div className={`flex justify-content-center`}>
-        <Button primary label={"Play Game"} />
-        <Button primary label={"View Code"} />
-      </div>
-      <div className={`flex justify-content-center`}>
-        <Button primary label={"Play Game"} />
-        <Button primary label={"View Code"} />
-      </div>
-      <div className={`flex justify-content-center`}>
-        <Button primary label={"Play Game"} />
-        <Button primary label={"View Code"} />
-      </div>
-      <div className={`flex justify-content-center`}>
-        <Button primary label={"Play Game"} />
-        <Button primary label={"View Code"} />
-      </div>
-      <div className={`flex justify-content-center`}>
-        <Button primary label={"Play Game"} />
-        <Button primary label={"View Code"} />
-      </div>
+      <Banner showTopBorder />
+      {projects.map((project) => (
+        <ProjectDisplay
+          key={project.id}
+          index={project.index}
+          title={project.title}
+          imageSrc={project.imageSrc}
+          description={project.description}
+          playUrl={project.playUrl}
+          codeUrl={project.codeUrl}
+          playText={project.playText}
+          viewText={project.viewText}
+        />
+      ))}
+
+      <Banner showTopBorder />
     </>
   );
 };
