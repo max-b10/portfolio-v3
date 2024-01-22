@@ -41,33 +41,43 @@ const ProjectDisplay: React.FC<ProjectDisplayProps> = ({
       }`}
     >
       <div className={styles.contentContainer}>
-        <div className={styles.projectHeader}>
-          <span>{title}</span>
+        <div className={styles.leftColumn}>
+          <div className={styles.projectHeader}>
+            <span>{title}</span>
+          </div>
+          <div className={styles.imageContainer}>
+            <Image
+              src={imageSrc}
+              className={styles.image}
+              alt="background image"
+            />
+          </div>
+
+          <div className={`${styles.projectDescription}`}>
+            <p>{description}</p>
+          </div>
+
+          <div className={styles.buttonContainer}>
+            <Button
+              classNameWrapper="mr-2"
+              primary={isPrimary}
+              label={playText ?? "Play Game"}
+              onClick={playGame}
+            />
+            <Button
+              classNameWrapper="ml-2"
+              primary={isPrimary}
+              label={viewText ?? "View Code"}
+              onClick={viewCode}
+            />
+          </div>
         </div>
-        <div className={styles.imageContainer}>
+
+        <div className={styles.rightColumn}>
           <Image
             src={imageSrc}
             className={styles.image}
             alt="background image"
-          />
-        </div>
-
-        <div className={`${styles.projectDescription}`}>
-          <p>{description}</p>
-        </div>
-
-        <div className={styles.buttonContainer}>
-          <Button
-            classNameWrapper="mr-2"
-            primary={isPrimary}
-            label={playText ?? "Play Game"}
-            onClick={playGame}
-          />
-          <Button
-            classNameWrapper="ml-2"
-            primary={isPrimary}
-            label={viewText ?? "View Code"}
-            onClick={viewCode}
           />
         </div>
       </div>
