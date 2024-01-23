@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="description"
           content="Max Bungay's professional portfolio showcasing front end web development projects."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/MB.png" />
       </Head>
       <SWRConfig
         value={{
