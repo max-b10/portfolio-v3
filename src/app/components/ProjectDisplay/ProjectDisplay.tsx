@@ -59,13 +59,13 @@ const ProjectDisplay: React.FC<ProjectDisplayProps> = ({
 
           <div className={styles.buttonContainer}>
             <Button
-              classNameWrapper="mr-2"
+              classNameWrapper={`mr-2 ${styles.button}`}
               primary={isPrimary}
               label={playText ?? "Play Game"}
               onClick={playGame}
             />
             <Button
-              classNameWrapper="ml-2"
+              classNameWrapper={`ml-2 ${styles.button}`}
               primary={isPrimary}
               label={viewText ?? "View Code"}
               onClick={viewCode}

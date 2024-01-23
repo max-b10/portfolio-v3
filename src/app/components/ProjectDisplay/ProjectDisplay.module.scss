@@ -60,7 +60,7 @@
   justify-content: center;
 }
 
-// Mobile Screens up to 500px:
+// Mobile/Tablet Screens up to 600px:
 
 @media (max-width: 369px) {
   .contentContainer {
@@ -85,21 +85,30 @@
     max-width: 50%;
   }
 }
-
-// Tablet/larger screens above 500px:
-
 @media (min-width: 500px) {
+  .image,
+  .projectDescription {
+    max-width: 60%;
+  }
+  .button {
+    font-size: var(--text-s);
+  }
+}
+// Tablet/larger screens above 600px:
+
+@media (min-width: 600px) {
   .projectHeader {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     margin: 20px 0 10px 0;
   }
   .projectDescription {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
     font-size: var(--text-xs);
+    max-width: 70%;
   }
   .imageContainer {
     display: none;
@@ -113,34 +122,56 @@
   .leftColumn {
     display: flex;
     flex-direction: column;
+    width: 150%;
   }
   .projectContainer {
     padding: 48px 24px;
   }
   .contentContainer {
     flex-direction: row;
-    max-width: 80%;
+    max-width: 70%;
   }
   .buttonContainer {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
-@media (min-width: 600px) {
-  .image {
-    max-width: 80%;
-  }
-  .contentContainer {
-    max-width: 70%;
-  }
-}
+
 @media (min-width: 768px) {
+  .contentContainer {
+    max-width: 65%;
+  }
   .leftColumn {
     margin-left: 10px;
+    width: 130%;
   }
   .projectDescription {
     font-size: var(--text-s);
+  }
+}
+@media (min-width: 992px) {
+  .contentContainer {
+    max-width: 60%;
+  }
+  .projectHeader {
+    margin: 0 0 20px 0;
+  }
+  .projectDescription {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size: var(--text-s);
+  }
+  .buttonContainer span {
+    font-size: var(--text-xs);
+  }
+}
+@media (min-width: 1200px) {
+  .projectDescription {
+    font-size: var(--text-l);
+  }
+  .buttonContainer span {
+    font-size: var(--text-m);
   }
 }

@@ -51,7 +51,7 @@ export const projects = [
     title: "Dad Joke Generator",
     imageSrc: DadJokePic,
     description:
-      "Using Axios and one simple async function, this app provides any immature user with a dad joke at the click of a button. Credit to the icanhazdadjoke.com API.",
+      "Using Axios, this app provides any immature user with a dad joke at the click of a button. Credit to the icanhazdadjoke.com API.",
     playUrl: "https://djg-max-b10.netlify.app/",
     codeUrl: "https://github.com/max-b10/Dad-joke-generator",
     playText: "Play Game",
@@ -75,7 +75,7 @@ export const projects = [
     title: "Compare the Crypto Market",
     imageSrc: CTCMPic,
     description:
-      "Using Axios to access theCoin GeckoAPI, this app displays the realtime prices and information of cryptocurrencies. Another project I styled using Bootstrap.",
+      "Using Axios to access the Coin GeckoAPI, this app displays the realtime prices and information of cryptocurrencies. Another project I styled using Bootstrap.",
     playUrl: "https://ctcm-max-b10.netlify.app",
     codeUrl: "https://github.com/max-b10/Crypto-Compare-App",
     playText: "Play Game",
