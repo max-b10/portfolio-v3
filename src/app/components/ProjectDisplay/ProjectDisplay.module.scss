@@ -175,3 +175,13 @@
     font-size: var(--text-m);
   }
 }
+@media (min-width: 1440px) {
+  .contentContainer {
+    max-width: 50%;
+  }
+}
+@media (min-width: 1920px) {
+  .contentContainer {
+    max-width: 40%;
+  }
+}
