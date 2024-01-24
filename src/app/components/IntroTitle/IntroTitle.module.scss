@@ -1,4 +1,36 @@
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .titleContainer {
   display: flex;
   justify-content: center;
+}
+
+.name {
+  font-size: var(--text-xxxl);
+  font-weight: var(--text-medium);
+  z-index: 2;
+  animation: fadeInOut 1s ease-in-out 1.5s forwards;
+}
+
+.portfolio {
+  font-size: var(--text-xxxl);
+  font-weight: var(--text-thin);
+  z-index: 2;
+  animation: fadeOut 1s ease-in-out 1.8s forwards;
 }

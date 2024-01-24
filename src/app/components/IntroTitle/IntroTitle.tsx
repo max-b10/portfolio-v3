@@ -12,8 +12,8 @@ const IntroTitle: React.FC<IntroTitleProps> = ({
 }) => {
   return (
     <div className={styles.titleContainer}>
-      <div>{nameString}</div>
-      <div>{portfolioString}</div>
+      <div className={`mr-1 ${styles.name}`}>{nameString}</div>
+      <div className={`ml-1 ${styles.portfolio}`}>{portfolioString}</div>
     </div>
   );
 };
