@@ -29,16 +29,18 @@
 
 .heroSection {
   height: 80vh;
+  background-color: var(--project-dark);
+  position: relative;
 }
 
-.titleContainer {
+.headerContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
   top: 10px;
   left: 10px;
-  opacity: 0; /* Initially set opacity to 0 */
+  opacity: 0;
   animation: fadeIn 1s ease-in-out 2.8s forwards; /* Fade in after 2.8 seconds */
 }
 
@@ -51,12 +53,30 @@
   font-size: var(--text-s);
   margin: 5px 0px 0px 2px;
 }
+.nav {
+  margin-top: 50px;
+}
+.nav ol {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  list-style: none;
+  padding: 0 0 0 10px;
+}
+.nav ol li {
+  font-size: var(--text-s);
+  font-weight: var(--text-semibold);
+  cursor: pointer;
+  &:hover {
+    color: var(--button-hover-color);
+  }
+}
 .profileContainer {
   position: absolute;
   white-space: nowrap;
   right: 10px;
   bottom: 0;
-  opacity: 0; /* Initially set opacity to 0 */
+  opacity: 0;
   animation: fadeIn 1s ease-in-out 2.8s forwards; /* Fade in after 2.8 seconds */
 }
 .profileDescription {

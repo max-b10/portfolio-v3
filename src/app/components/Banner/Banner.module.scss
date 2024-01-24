@@ -14,7 +14,7 @@
   display: inline-block;
   vertical-align: middle;
   top: 50%;
-  width: 30%;
+  width: 100vw;
   border-top: solid 1px white;
 }
 .banner::before {
@@ -32,15 +32,15 @@
 .bottomBorder {
   border-bottom: solid 1px var(--neutral-0);
 }
-@media (min-width: 1440px) {
-  .banner::before,
-  .banner:after {
-    width: 25%;
-  }
-}
-@media (min-width: 1920px) {
-  .banner::before,
-  .banner:after {
-    width: 20%;
-  }
-}
+// @media (min-width: 1440px) {
+//   .banner::before,
+//   .banner:after {
+//     width: 25%;
+//   }
+// }
+// @media (min-width: 1920px) {
+//   .banner::before,
+//   .banner:after {
+//     width: 20%;
+//   }
+// }
