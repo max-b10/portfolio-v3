@@ -6,6 +6,7 @@
   height: 10vh;
   color: var(--neutral-0);
   background-color: var(--nav-background);
+  z-index: 1;
 }
 .banner::before,
 .banner:after {

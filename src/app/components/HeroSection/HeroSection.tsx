@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import styles from "./HeroSection.module.scss";
 import IntroTitle from "../IntroTitle/IntroTitle";
 
@@ -10,28 +9,37 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = () => {
   return (
     <div className={`relative ${styles.heroSection}`}>
-      <Image
-        src="/images/firebackground.jpg"
-        alt="background image"
-        layout="fill"
-        style={{
-          opacity: "30%",
-        }}
-        objectFit="cover"
-      />
       <div
         className={`absolute inset-0 flex justify-center items-center ${styles.overlay}`}
       >
-        <IntroTitle
-          nameString={`Max${"\u00A0".repeat(2)}Bungay`}
-          portfolioString={"Portfolio"}
-        />
+        <IntroTitle nameString="Max Bungay" portfolioString={"Portfolio"} />
       </div>
 
       <div
         className={`absolute inset-0 flex justify-center items-center ${styles.overlay}`}
       >
         {/* <div>{title}</div> */}
+        <div className={styles.titleContainer}>
+          <div className={styles.name}>Max Bungay</div>
+          <div className={styles.occupation}>Frontend Developer</div>
+        </div>
+        <div className={styles.profileContainer}>
+          <p className={styles.profileDescription}>
+            <span>Welcome</span>
+            <span>to my</span>
+            <span>portfolio,</span>
+            <span>built using</span>
+            <span>Next.js & React.</span>
+            <span>Feel free</span>
+            <span>to take a scroll</span>
+            <span>down and check</span>
+            <span>out some vanilla </span>
+            <span>JavaScript Classics,</span>
+            <span>Retro Games,</span>
+            <span>Responsive Design</span>
+            <span>and more.</span>
+          </p>
+        </div>
       </div>
     </div>
   );

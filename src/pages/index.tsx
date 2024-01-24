@@ -3,10 +3,10 @@ import HeroSection from "../app/components/HeroSection/HeroSection";
 import Banner from "../app/components/Banner/Banner";
 import ProjectDisplay from "../app/components/ProjectDisplay/ProjectDisplay";
 import { projects } from "../menu/projectsData";
-
+import styles from "./index.module.css";
 const Home = (): JSX.Element => {
   return (
-    <div>
+    <div className={styles.container}>
       <Banner showBottomBorder />
 
       <HeroSection />

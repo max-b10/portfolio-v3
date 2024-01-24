@@ -1,3 +1,12 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .mainWrapper {
   width: 100%;
   @media screen and (min-width: 1368px) {
@@ -8,15 +17,51 @@
     width: 1176px;
   }
 }
+
 .overlay {
   position: absolute;
   inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
   color: #ffffff;
 }
+
 .heroSection {
   height: 80vh;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0; /* Initially set opacity to 0 */
+  animation: fadeIn 1s ease-in-out 2.8s forwards; /* Fade in after 2.8 seconds */
+}
+
+.name {
+  font-size: var(--text-header);
+  font-weight: var(--text-thinnest);
+}
+
+.occupation {
+  font-size: var(--text-s);
+  margin: 5px 0px 0px 2px;
+}
+.profileContainer {
+  position: absolute;
+  white-space: nowrap;
+  right: 10px;
+  bottom: 0;
+  opacity: 0; /* Initially set opacity to 0 */
+  animation: fadeIn 1s ease-in-out 2.8s forwards; /* Fade in after 2.8 seconds */
+}
+.profileDescription {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--text-s);
+  font-weight: var(--text-semibold);
 }
