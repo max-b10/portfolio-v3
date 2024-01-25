@@ -1,3 +1,20 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(70deg);
+  }
+  100% {
+    transform: scale(0.5) translateY(-100px) rotate(360deg);
+  }
+}
+
 .mainWrapper {
   width: 100%;
   @media screen and (min-width: 1368px) {
@@ -8,15 +25,232 @@
     width: 1176px;
   }
 }
+
+.heroSection {
+  height: 80vh;
+  background-color: var(--project-dark);
+  position: relative;
+  margin: 8px;
+}
+
 .overlay {
   position: absolute;
   inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
   color: #ffffff;
 }
-.heroSection {
-  height: 80vh;
+
+.headerContainer {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 2.8s forwards; /* Fade in after 2.8 seconds */
+}
+
+.name {
+  font-size: var(--text-header);
+  font-weight: var(--text-thinnest);
+}
+
+.occupation {
+  font-size: var(--text-s);
+  margin: 5px 0px 0px 2px;
+}
+
+.contact {
+  margin-top: 50px;
+}
+
+.contact ol {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  list-style: none;
+  padding: 0 0 0 10px;
+}
+
+.contact ol li a {
+  font-size: var(--text-s);
+  font-weight: var(--text-semibold);
+  cursor: pointer;
+  &:hover {
+    color: var(--button-hover-color);
+  }
+  &:active {
+    color: var(--button-hover-color);
+    transform: translateY(1px);
+  }
+}
+
+.profileContainer {
+  position: absolute;
+  white-space: nowrap;
+  right: 10px;
+  bottom: 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 2.8s forwards; /* Fade in after 2.8 seconds */
+}
+
+.profileDescription {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--text-s);
+  font-weight: var(--text-semibold);
+}
+
+.profileDescription span {
+  line-height: var(--line-l);
+}
+
+// Background Animation
+.bubblesWrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 2.8s forwards;
+}
+
+.bubblesWrapper h1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 888;
+  text-transform: uppercase;
+}
+
+.bubblesWrapper div {
+  height: 60px;
+  width: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: 4s linear infinite;
+}
+
+div .dot {
+  height: 5px;
+  width: 5px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+
+.bubblesWrapper div:nth-child(1) {
+  top: 60%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+
+.bubblesWrapper div:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  animation: animate 10s linear infinite;
+}
+
+.bubblesWrapper div:nth-child(3) {
+  top: 40%;
+  left: 40%;
+  animation: animate 7s linear infinite;
+}
+
+.bubblesWrapper div:nth-child(4) {
+  top: 66%;
+  left: 30%;
+  animation: animate 7s linear infinite;
+}
+
+.bubblesWrapper div:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation: animate 9s linear infinite;
+}
+
+.bubblesWrapper div:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  animation: animate 9s linear infinite;
+}
+
+.bubblesWrapper div:nth-child(7) {
+  top: 70%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+
+.bubblesWrapper div:nth-child(8) {
+  top: 35%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+
+.bubblesWrapper div:nth-child(9) {
+  top: 50%;
+  left: 50%;
+  animation: animate 6s linear infinite;
+}
+
+.bubblesWrapper div:nth-child(10) {
+  top: 45%;
+  left: 20%;
+  animation: animate 10s linear infinite;
+}
+
+.bubblesWrapper div:nth-child(11) {
+  top: 10%;
+  left: 90%;
+  animation: animate 9s linear infinite;
+}
+
+.bubblesWrapper div:nth-child(12) {
+  top: 20%;
+  left: 70%;
+  animation: animate 7s linear infinite;
+}
+
+.bubblesWrapper div:nth-child(13) {
+  top: 90%;
+  left: 30%;
+  animation: animate 8s linear infinite;
+}
+
+.bubblesWrapper div:nth-child(14) {
+  top: 75%;
+  left: 5%;
+  animation: animate 6s linear infinite;
+}
+
+.bubblesWrapper div:nth-child(15) {
+  top: 15%;
+  left: 80%;
+  animation: animate 8s linear infinite;
+}
+@media (min-width: 1200px) {
+  .profileDescription span {
+    line-height: var(--line-xl);
+    font-size: var(--text-l);
+  }
+}
+@media (min-width: 1440px) {
+  .profileDescription span {
+    line-height: var(--line-xxl);
+    font-size: var(--text-xl);
+  }
 }

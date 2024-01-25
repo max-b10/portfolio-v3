@@ -72,7 +72,7 @@ export const projects = [
   {
     id: 6,
     index: 5,
-    title: "Compare the Crypto Market",
+    title: "Crypto Market",
     imageSrc: CTCMPic,
     description:
       "Using Axios to access the Coin GeckoAPI, this app displays the realtime prices and information of cryptocurrencies. Another project I styled using Bootstrap.",

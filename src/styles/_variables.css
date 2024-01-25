@@ -21,7 +21,7 @@
   --nav-background: #1d242a;
 
   --projects-header-container-background: #1d242a;
-  --project-left-background: #ededed;
+  --project-light: #ededed;
   --project-dark: #2a3540;
 
   --footer-background: #1d242a;
@@ -47,6 +47,12 @@
   --text-xxxl: 24px;
   --line-xxxl: 28px;
 
+  --text-header: 30px;
+  --line-header: 34px;
+
+  --text-thinnest: 100;
+  --text-thinner: 200;
+  --text-thin: 300;
   --text-normal: 400;
   --text-medium: 500;
   --text-semibold: 600;

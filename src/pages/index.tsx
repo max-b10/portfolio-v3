@@ -1,13 +1,12 @@
 import React from "react";
 import HeroSection from "../app/components/HeroSection/HeroSection";
-// import Navbar from "../app/components/Navbar/Navbar";
 import Banner from "../app/components/Banner/Banner";
 import ProjectDisplay from "../app/components/ProjectDisplay/ProjectDisplay";
 import { projects } from "../menu/projectsData";
+import styles from "./index.module.css";
 const Home = (): JSX.Element => {
   return (
-    <>
-      {/* <Navbar /> */}
+    <div className={styles.container}>
       <Banner showBottomBorder />
 
       <HeroSection />
@@ -27,7 +26,7 @@ const Home = (): JSX.Element => {
       ))}
 
       <Banner showTopBorder />
-    </>
+    </div>
   );
 };
 
