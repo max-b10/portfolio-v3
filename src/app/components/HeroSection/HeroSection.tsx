@@ -2,11 +2,7 @@ import React from "react";
 import styles from "./HeroSection.module.scss";
 import IntroTitle from "../IntroTitle/IntroTitle";
 
-interface HeroSectionProps {
-  title?: string;
-}
-
-const HeroSection: React.FC<HeroSectionProps> = () => {
+const HeroSection: React.FC = () => {
   return (
     <div className={`relative ${styles.heroSection}`}>
       <div
@@ -18,21 +14,30 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
       <div
         className={`absolute inset-0 flex justify-center items-center ${styles.overlay}`}
       >
-        {/* <div>{title}</div> */}
         <div className={styles.headerContainer}>
           <div className={styles.name}>Max Bungay</div>
           <div className={styles.occupation}>Frontend Developer</div>
-          <div className={styles.nav}>
+          <div className={styles.contact}>
             <nav>
               <ol>
+                <li>bungaymax@gmail.com</li>
                 <li>
-                  <a href="#">Home</a>
+                  <a
+                    href="https://linkedin.com/in/max-bungay"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    linkedin.com/in/max-bungay
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Projects</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
+                  <a
+                    href="https://github.com/max-b10"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    github.com/max-b10
+                  </a>
                 </li>
               </ol>
             </nav>
