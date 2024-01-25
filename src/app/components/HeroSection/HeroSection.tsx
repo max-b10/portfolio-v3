@@ -56,6 +56,53 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
           </p>
         </div>
       </div>
+      <div className={styles.bubblesWrapper}>
+        <div>
+          <span className={styles.dot}></span>
+        </div>
+        <div>
+          <span className={styles.dot}></span>
+        </div>
+        <div>
+          <span className={styles.dot}></span>
+        </div>
+        <div>
+          <span className={styles.dot}></span>
+        </div>
+        <div>
+          <span className={styles.dot}></span>
+        </div>
+        <div>
+          <span className={styles.dot}></span>
+        </div>
+        <div>
+          <span className={styles.dot}></span>
+        </div>
+        <div>
+          <span className={styles.dot}></span>
+        </div>
+        <div>
+          <span className={styles.dot}></span>
+        </div>
+        <div>
+          <span className={styles.dot}></span>
+        </div>
+        <div>
+          <span className={styles.dot}></span>
+        </div>
+        <div>
+          <span className={styles.dot}></span>
+        </div>
+        <div>
+          <span className={styles.dot}></span>
+        </div>
+        <div>
+          <span className={styles.dot}></span>
+        </div>
+        <div>
+          <span className={styles.dot}></span>
+        </div>
+      </div>
     </div>
   );
 };
