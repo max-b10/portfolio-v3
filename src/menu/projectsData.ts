@@ -4,7 +4,6 @@ import SnakePic from "../../public/images/ProjectPreviews/snake.png";
 import DadJokePic from "../../public/images/ProjectPreviews/dad-joke.png";
 import CalculatorPic from "../../public/images/ProjectPreviews/calculator.png";
 import CTCMPic from "../../public/images/ProjectPreviews/ctcm.png";
-import TodoListPic from "../../public/images/ProjectPreviews/todo-list.png";
 import BreakoutPic from "../../public/images/ProjectPreviews/breakout.png";
 import HangmanPic from "../../public/images/ProjectPreviews/hangman.png";
 
@@ -81,21 +80,10 @@ export const projects = [
     playText: "Play Game",
     viewText: "View Code",
   },
+
   {
     id: 7,
     index: 6,
-    title: "Todo-List App",
-    imageSrc: TodoListPic,
-    description:
-      "The most clichéd of all JavaScript projects, I found this to be a brilliant learning resource from Andrew Mead's JavaScript course on Udemy.com",
-    playUrl: "https://max-b10-todolist.netlify.app/",
-    codeUrl: "https://github.com/max-b10/todo-app",
-    playText: "Play Game",
-    viewText: "View Code",
-  },
-  {
-    id: 8,
-    index: 7,
     title: "Breakout",
     imageSrc: BreakoutPic,
     description:
@@ -106,8 +94,8 @@ export const projects = [
     viewText: "View Code",
   },
   {
-    id: 9,
-    index: 8,
+    id: 8,
+    index: 7,
     title: "Hangman",
     imageSrc: HangmanPic,
     description:
