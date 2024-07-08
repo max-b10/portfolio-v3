@@ -1,6 +1,6 @@
 import TFPLMPic from "../../public/images/ProjectPreviews/tfplm.png";
 import FlappyBirdPic from "../../public/images/ProjectPreviews/flappy-bird.png";
-import TTSPic from "../../public/images/ProjectPreviews/tts.png";
+// import TTSPic from "../../public/images/ProjectPreviews/tts.png";
 import SnakePic from "../../public/images/ProjectPreviews/snake.png";
 import DadJokePic from "../../public/images/ProjectPreviews/dad-joke.png";
 import CalculatorPic from "../../public/images/ProjectPreviews/calculator.png";
@@ -34,21 +34,21 @@ export const projects = [
     playText: "Play Game",
     viewText: "View Code",
   },
+  // {
+  //   id: 3,
+  //   index: 2,
+  //   title: "Text to Speech",
+  //   imageSrc: TTSPic,
+  //   description:
+  //     "Styled with Bootstrap, this app uses the Web Speech API to turn user's text into a voice of their choice from the dropdown menu provided.",
+  //   playUrl: "https://tts-max-b10.netlify.app/",
+  //   codeUrl: "https://github.com/max-b10/Text-To-Speech",
+  //   playText: "Visit App",
+  //   viewText: "View Code",
+  // },
   {
     id: 3,
     index: 2,
-    title: "Text to Speech",
-    imageSrc: TTSPic,
-    description:
-      "Styled with Bootstrap, this app uses the Web Speech API to turn user's text into a voice of their choice from the dropdown menu provided.",
-    playUrl: "https://tts-max-b10.netlify.app/",
-    codeUrl: "https://github.com/max-b10/Text-To-Speech",
-    playText: "Visit App",
-    viewText: "View Code",
-  },
-  {
-    id: 4,
-    index: 3,
     title: "Snake",
     imageSrc: SnakePic,
     description:
@@ -59,8 +59,8 @@ export const projects = [
     viewText: "View Code",
   },
   {
-    id: 5,
-    index: 4,
+    id: 4,
+    index: 3,
     title: "Dad Joke Generator",
     imageSrc: DadJokePic,
     description:
@@ -71,8 +71,8 @@ export const projects = [
     viewText: "View Code",
   },
   {
-    id: 6,
-    index: 5,
+    id: 5,
+    index: 4,
     title: "Calculator",
     imageSrc: CalculatorPic,
     description:
@@ -83,8 +83,8 @@ export const projects = [
     viewText: "View Code",
   },
   {
-    id: 7,
-    index: 6,
+    id: 6,
+    index: 5,
     title: "Crypto Market",
     imageSrc: CTCMPic,
     description:
@@ -96,8 +96,8 @@ export const projects = [
   },
 
   {
-    id: 8,
-    index: 7,
+    id: 7,
+    index: 6,
     title: "Breakout",
     imageSrc: BreakoutPic,
     description:
@@ -108,8 +108,8 @@ export const projects = [
     viewText: "View Code",
   },
   {
-    id: 9,
-    index: 8,
+    id: 8,
+    index: 7,
     title: "Hangman",
     imageSrc: HangmanPic,
     description:
