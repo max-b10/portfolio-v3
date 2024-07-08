@@ -1,3 +1,4 @@
+import TFPLMPic from "../../public/images/ProjectPreviews/tfplm.png";
 import FlappyBirdPic from "../../public/images/ProjectPreviews/flappy-bird.png";
 import TTSPic from "../../public/images/ProjectPreviews/tts.png";
 import SnakePic from "../../public/images/ProjectPreviews/snake.png";
@@ -11,6 +12,19 @@ export const projects = [
   {
     id: 1,
     index: 0,
+    title: "The FPL Manager",
+    imageSrc: TFPLMPic,
+    description:
+      "An app for Fantasy Premier League fanatics to compare their stats with other managers.",
+    playUrl: "https://tfplm.vercel.app/",
+    codeUrl: "https://github.com/max-b10/TFPLM",
+    playText: "Visit App",
+    viewText: "View Code",
+  },
+
+  {
+    id: 2,
+    index: 1,
     title: "Flappy Bird",
     imageSrc: FlappyBirdPic,
     description:
@@ -21,20 +35,20 @@ export const projects = [
     viewText: "View Code",
   },
   {
-    id: 2,
-    index: 1,
+    id: 3,
+    index: 2,
     title: "Text to Speech",
     imageSrc: TTSPic,
     description:
       "Styled with Bootstrap, this app uses the Web Speech API to turn user's text into a voice of their choice from the dropdown menu provided.",
     playUrl: "https://tts-max-b10.netlify.app/",
     codeUrl: "https://github.com/max-b10/Text-To-Speech",
-    playText: "Play Game",
+    playText: "Visit App",
     viewText: "View Code",
   },
   {
-    id: 3,
-    index: 2,
+    id: 4,
+    index: 3,
     title: "Snake",
     imageSrc: SnakePic,
     description:
@@ -45,45 +59,45 @@ export const projects = [
     viewText: "View Code",
   },
   {
-    id: 4,
-    index: 3,
+    id: 5,
+    index: 4,
     title: "Dad Joke Generator",
     imageSrc: DadJokePic,
     description:
       "Using Axios, this app provides any immature user with a dad joke at the click of a button. Credit to the icanhazdadjoke.com API.",
     playUrl: "https://djg-max-b10.netlify.app/",
     codeUrl: "https://github.com/max-b10/Dad-joke-generator",
-    playText: "Play Game",
+    playText: "Visit App",
     viewText: "View Code",
   },
   {
-    id: 5,
-    index: 4,
+    id: 6,
+    index: 5,
     title: "Calculator",
     imageSrc: CalculatorPic,
     description:
       "A JavaScript Calculator served as a useful project to help me learn vanilla JavaScript fundamentals and CSS Grid.",
     playUrl: "https://calculator-max-b10.netlify.app/",
     codeUrl: "https://github.com/max-b10/JS-Calculator",
-    playText: "Play Game",
+    playText: "Visit App",
     viewText: "View Code",
   },
   {
-    id: 6,
-    index: 5,
+    id: 7,
+    index: 6,
     title: "Crypto Market",
     imageSrc: CTCMPic,
     description:
       "Using Axios to access the Coin GeckoAPI, this app displays the realtime prices and information of cryptocurrencies. Another project I styled using Bootstrap.",
     playUrl: "https://ctcm-max-b10.netlify.app",
     codeUrl: "https://github.com/max-b10/Crypto-Compare-App",
-    playText: "Play Game",
+    playText: "Visit App",
     viewText: "View Code",
   },
 
   {
-    id: 7,
-    index: 6,
+    id: 8,
+    index: 7,
     title: "Breakout",
     imageSrc: BreakoutPic,
     description:
@@ -94,8 +108,8 @@ export const projects = [
     viewText: "View Code",
   },
   {
-    id: 8,
-    index: 7,
+    id: 9,
+    index: 8,
     title: "Hangman",
     imageSrc: HangmanPic,
     description:
