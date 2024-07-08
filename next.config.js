@@ -3,9 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   output: "standalone",
-  images: {
-    domains: ["s.gravatar.com", "localhost"], // <== Domain name
-  },
+  // images: {
+  //   domains: ["s.gravatar.com", "localhost"], // <== Domain name
+  // },
   // experimental: {
   //   images: {
   //     allowFutureImage: true,

@@ -1,12 +1,12 @@
-import TFPLMPic from "/images/ProjectPreviews/tfplm.png";
-import FlappyBirdPic from "/images/ProjectPreviews/flappy-bird.png";
-import TTSPic from "/images/ProjectPreviews/tts.png";
-import SnakePic from "/images/ProjectPreviews/snake.png";
-import DadJokePic from "/images/ProjectPreviews/dad-joke.png";
-import CalculatorPic from "/images/ProjectPreviews/calculator.png";
-import CTCMPic from "/images/ProjectPreviews/ctcm.png";
-import BreakoutPic from "/images/ProjectPreviews/breakout.png";
-import HangmanPic from "/images/ProjectPreviews/hangman.png";
+import TFPLMPic from "../../public/images/ProjectPreviews/tfplm.png";
+import FlappyBirdPic from "../../public/images/ProjectPreviews/flappy-bird.png";
+import TTSPic from "../../public/images/ProjectPreviews/tts.png";
+import SnakePic from "../../public/images/ProjectPreviews/snake.png";
+import DadJokePic from "../../public/images/ProjectPreviews/dad-joke.png";
+import CalculatorPic from "../../public/images/ProjectPreviews/calculator.png";
+import CTCMPic from "../../public/images/ProjectPreviews/ctcm.png";
+import BreakoutPic from "../../public/images/ProjectPreviews/breakout.png";
+import HangmanPic from "../../public/images/ProjectPreviews/hangman.png";
 
 export const projects = [
   {
