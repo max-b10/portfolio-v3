@@ -1,4 +1,4 @@
-import TFPLMPic from "../../public/images/ProjectPreviews/tfplm.png";
+// import TFPLMPic from "../../public/images/ProjectPreviews/tfplm.png";
 import FlappyBirdPic from "../../public/images/ProjectPreviews/flappy-bird.png";
 // import TTSPic from "../../public/images/ProjectPreviews/tts.png";
 import SnakePic from "../../public/images/ProjectPreviews/snake.png";
@@ -9,22 +9,22 @@ import BreakoutPic from "../../public/images/ProjectPreviews/breakout.png";
 import HangmanPic from "../../public/images/ProjectPreviews/hangman.png";
 
 export const projects = [
+  // {
+  //   id: 1,
+  //   index: 0,
+  //   title: "The FPL Manager",
+  //   imageSrc: TFPLMPic,
+  //   description:
+  //     "An app for Fantasy Premier League fanatics to compare their stats with other managers.",
+  //   playUrl: "https://tfplm.vercel.app/",
+  //   codeUrl: "https://github.com/max-b10/TFPLM",
+  //   playText: "Visit App",
+  //   viewText: "View Code",
+  // },
+
   {
     id: 1,
     index: 0,
-    title: "The FPL Manager",
-    imageSrc: TFPLMPic,
-    description:
-      "An app for Fantasy Premier League fanatics to compare their stats with other managers.",
-    playUrl: "https://tfplm.vercel.app/",
-    codeUrl: "https://github.com/max-b10/TFPLM",
-    playText: "Visit App",
-    viewText: "View Code",
-  },
-
-  {
-    id: 2,
-    index: 1,
     title: "Flappy Bird",
     imageSrc: FlappyBirdPic,
     description:
@@ -47,8 +47,8 @@ export const projects = [
   //   viewText: "View Code",
   // },
   {
-    id: 3,
-    index: 2,
+    id: 2,
+    index: 1,
     title: "Snake",
     imageSrc: SnakePic,
     description:
@@ -59,8 +59,8 @@ export const projects = [
     viewText: "View Code",
   },
   {
-    id: 4,
-    index: 3,
+    id: 3,
+    index: 2,
     title: "Dad Joke Generator",
     imageSrc: DadJokePic,
     description:
@@ -71,8 +71,8 @@ export const projects = [
     viewText: "View Code",
   },
   {
-    id: 5,
-    index: 4,
+    id: 4,
+    index: 3,
     title: "Calculator",
     imageSrc: CalculatorPic,
     description:
@@ -83,8 +83,8 @@ export const projects = [
     viewText: "View Code",
   },
   {
-    id: 6,
-    index: 5,
+    id: 5,
+    index: 4,
     title: "Crypto Market",
     imageSrc: CTCMPic,
     description:
@@ -96,8 +96,8 @@ export const projects = [
   },
 
   {
-    id: 7,
-    index: 6,
+    id: 6,
+    index: 5,
     title: "Breakout",
     imageSrc: BreakoutPic,
     description:
@@ -108,8 +108,8 @@ export const projects = [
     viewText: "View Code",
   },
   {
-    id: 8,
-    index: 7,
+    id: 7,
+    index: 6,
     title: "Hangman",
     imageSrc: HangmanPic,
     description:
